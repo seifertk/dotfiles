@@ -1,0 +1,169 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 12.5,
+    "editor.rulers": [80],
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.wrappingColumn": 240,
+    "editor.renderIndentGuides": true,
+    "editor.renderLineHighlight": true,
+    "editor.acceptSuggestionOnEnter": false,
+    "php.validate.executablePath": "/usr/bin/php",
+    "telemetry.enableTelemetry": false,
+    "editor.fontFamily": "'Menlo', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "emmet.syntaxProfiles": {
+        "blade.php": "html"
+    },
+    "phpcs.standard": "PSR2",
+    "crane.showStatusBarBugReportLink": false,
+    "phpformatter.composer": true,
+    "files.insertFinalNewline": true,
+    "workbench.activityBar.visible": true,
+    "window.zoomLevel": 0,
+    "crane.ignoredPaths": ["**/database/migrations/*"],
+    "git.confirmSync": false,
+    "phpcs.ignore": "database/migrations/*",
+    "workbench.iconTheme": "vs-nomo-dark",
+    "python.linting.pylintArgs": [],
+    "python.pythonPath": "python3",
+    "editor.lineHeight": 0,
+    "gitblame.ignoreWhitespace": true,
+    "php.suggest.basic": false,
+    "git.ignoreLegacyWarning": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "extensions.ignoreRecommendations": false,
+    "editor.formatOnPaste": false,
+    "ansibleVault.keyfile": "/home/kyle/.vault_password.txt",
+    "gitlens.blame.line.enabled": false,
+    "gitlens.codeLens.perLanguageLocations": [{
+            "language": "css",
+            "locations": [
+                "document"
+            ]
+        },
+        {
+            "language": "html",
+            "locations": [
+                "document"
+            ]
+        },
+        {
+            "language": "json",
+            "locations": [
+                "document"
+            ]
+        },
+        {
+            "language": "less",
+            "locations": [
+                "document"
+            ]
+        },
+        {
+            "language": "scss",
+            "locations": [
+                "document"
+            ]
+        },
+        {
+            "language": "vue",
+            "locations": [
+                "document"
+            ]
+        },
+        {
+            "language": "php",
+            "locations": [
+                "document"
+            ]
+        }
+    ],
+    "[ruby]": {
+        "editor.tabSize": 2
+    },
+    "ruby.lint": {
+        "reek": false,
+        "rubocop": false,
+        "ruby": true
+    },
+    "emmet.includeLanguages": {
+        "blade.php": "html",
+        "blade-php": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.excludeLanguages": [
+        "markdown",
+        "php"
+    ],
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": true,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": false
+    },
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "vsicons.projectDetection.autoReload": true,
+    "git.autofetch": true,
+    "explorer.autoReveal": false,
+    "gitlens.codeLens.scopesByLanguage": [
+        {
+            "language": "css",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "html",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "json",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "less",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "scss",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "vue",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "php",
+            "scopes": [
+                "document"
+            ]
+        }
+    ],
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.enabled": false,
+    "gitlens.keymap": "chorded",
+    "explorer.confirmDragAndDrop": false,
+    "phpformatter.arguments": [
+        "--level=psr2"
+    ],
+    "editor.tabCompletion": true,
+    "gitlens.historyExplorer.enabled": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "shellcheck.disableVersionCheck": true
+}
