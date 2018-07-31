@@ -137,7 +137,18 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-alias xclip='xclip -selection c'
+_tmux_send_keys_all_panes_ () {
+  for _pane in $(tmux list-panes -F '#P'); do
+    tmux send-keys -t ${_pane} "$@" C-m
+  done
+
+}
+
+tcd () {
+    _tmux_send_keys_all_panes_ "cd $PWD && cd $@";
+}
+
+alias tname='tmux rename-window';
 
 # Laravel aliases
 alias art='php artisan'
