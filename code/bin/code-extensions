@@ -1,0 +1,35 @@
+#!/bin/sh
+
+__backup_file="$HOME/.config/Code/User/code-extensions.list"
+
+# manage vs code extensions
+
+__usage()
+{
+  echo
+  echo "Usage: code-extensions [options]"
+  echo
+  echo "Options:"
+  printf "  -b\t\tBackup extensions to %s\n" "$__backup_file"
+  printf "  -r,-i\t\tInstall extensions from %s\n" "$__backup_file"
+}
+
+if [ -z "$1" ]; then
+  __usage && exit
+fi
+
+while getopts ":bi" opt; do
+  case "$opt" in
+    b)
+      code --list-extensions > "$__backup_file"
+      ;;
+    i|r)
+      while read ext; do
+        code --install-extension "$ext"
+      done < "$__backup_file"
+      ;;
+    \?)
+      __usage
+      ;;
+  esac
+done

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# clean the VS Code workspace storage dir
+rm -rf ~/.config/Code/User/workspaceStorage/*
