@@ -165,5 +165,9 @@
     "editor.tabCompletion": true,
     "gitlens.historyExplorer.enabled": true,
     "java.errors.incompleteClasspath.severity": "ignore",
-    "shellcheck.disableVersionCheck": true
+    "shellcheck.disableVersionCheck": true,
+    "files.associations": {
+        "*.yml": "yaml"
+    },
+    "editor.renderWhitespace": "all"
 }
