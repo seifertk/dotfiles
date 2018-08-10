@@ -1,0 +1,9 @@
+[user]
+    name = Kyle Seifert
+    email = seifert.kyle@gmail.com
+
+[color]
+    ui = true
+
+[push]
+    default = simple
