@@ -120,6 +120,7 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ] ; then source /etc/profile.d/vte.sh; fi # U
 
 export PATH=${PATH}:${HOME}/bin
 export PATH=${PATH}:${HOME}/.composer/vendor/bin
+export PATH=${PATH}:${HOME}/.config/composer/vendor/bin
 
 alias ..='cd ..'
 
@@ -160,4 +161,15 @@ alias artisan='php artisan'
 
 # Other
 
-alias slack='docker run --rm -ti -v weechat:/weechat slack'
+alias xclip='xclip -selection c'
+alias httpserve='python -m SimpleHTTPServer 80'
+
+phpunit() {
+    if [ -e ./vendor/bin/phpunit ]; then
+        echo "Running local phpunit..."
+        ./vendor/bin/phpunit $@
+    else
+        echo "Running global phpunit..."
+        phpunit $@
+    fi
+}
