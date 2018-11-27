@@ -2,8 +2,14 @@
     name = Kyle Seifert
     email = seifert.kyle@gmail.com
 
+[core]
+    excludesfile = /home/kyle/.gitignore_global
+
 [color]
     ui = true
 
 [push]
     default = simple
+
+[alias]
+    clear = !git branch --merged | egrep -v \"(^\\*|master|dev)\" | xargs -r git branch -d
